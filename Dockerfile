@@ -13,6 +13,9 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./fast_api_template /code/fast_api_template
 COPY ./run.py /code/
 
+ENV APP_STAGE=PROD
+ENV APP_PORT=3000
+
 EXPOSE 3000
 
 CMD ["python", "run.py"]
