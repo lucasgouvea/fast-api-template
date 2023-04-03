@@ -12,7 +12,7 @@ fastapi = "^0.95.0"
 uvicorn = {extras = ["standard"], version = "^0.21.1"}
 
 [tool.poetry.scripts]
-start = "fast_api_template.__init__:start"
+start = "fast_api_template.main:start"
 
 [build-system]
 requires = ["poetry-core"]
